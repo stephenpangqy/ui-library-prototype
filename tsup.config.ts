@@ -7,5 +7,10 @@ export default defineConfig({
   dts: true,               // emit .d.ts
   sourcemap: true,
   clean: true,
-  external: ["react", "react-dom", "antd"] // don't bundle these
+  external: [ // dont bundle these
+    "react",
+    "react-dom",
+    "antd",
+    "react/jsx-runtime"   // 👈 important for React 17+ new JSX transform
+  ]
 });
