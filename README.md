@@ -34,6 +34,10 @@ npm install ../../ui-library-prototype/stephen-pang-ui-0.1.0.tgz
 
 Fix: Ensure that your App's ```react``` and ```react-dom``` is the same version as the peer dependency of this library.
 
+2. If you are getting a ```Cannot find module @rollup/rollup-win32-x64-msvc. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.``` when trying to run ```npm run build```
+
+Fix: Do as it says, delete your node_modules and package-lock.json and run the build command again.
+
 
 UI considerations to note:
 1. Since the UI-library is in TypeScript, it can work for both JavaScript and Typescript React projects.
