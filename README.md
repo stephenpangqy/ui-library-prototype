@@ -26,8 +26,15 @@ npm pack
 npm install ../../ui-library-prototype/stephen-pang-ui-0.1.0.tgz
 ```
 
+5. To create a storybook, run the following command:
+```
+npx storybook@latest init
+```
+Select Vite if prompted. This will create a directory, ```.storybook/```
 
+6. If storybook does not appear to exist, run ```npm install -D storybook```
 
+7. To start the storybook, run ```npm run storybook```
 
 ## Things to Note
 1. If you are getting a ```useContext null``` error, this means that the context of the library is not aligned with the context of your app.
